@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define MAX_VERTICES 100
-void DFS(int graph[MAX_VERTICES][MAX_VERTICES], intvisited[MAX_VERTICES], int vertices, int start) {
+void DFS(int graph[MAX_VERTICES][MAX_VERTICES], int visited[MAX_VERTICES], int vertices, int start) {
     int i;
     printf("%d ", start);
     visited[start] = 1;
@@ -49,3 +49,6 @@ int main() {
     DFS(graph, visited, vertices, startVertex);
     return 0;
 }
+
+
+   
